@@ -9,10 +9,12 @@ header {
     padding-left: 140px;
     display: flex;
     padding-right: 150px;
+    height: 8vh;
+    padding-top: 10px;
 }
 
 header img {
-    width: 10%;
+    width: 12%;
 }
 
 header a {
@@ -29,18 +31,47 @@ header a:hover {
     text-decoration: underline;
 }
 
+
+@media screen and (max-width: 1100px) {
+    header img {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header img {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    header img {
+        width: 30%;
+    }
+
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    iframe {
+        width: 450px;
+    }
+
+}
+
+
 .top {
     line-height: 0px;
 }
 
 .top img {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
 }
 
 .bottom {
-    color: white;
-    background-color: #424B5A;
+    background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 140px;
@@ -52,9 +83,27 @@ header a:hover {
 }
 
 .quiz {
-    background-color: #6a6a6a;
+    background-color: #424B5A;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
+}
+
+.video {
+    text-align: center;
+    background-color: #e3e3e3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.video a {
+    color: black;
+    text-decoration: none;
+}
+
+.video a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -70,42 +119,6 @@ footer {
     font-family: 'safetyregular';
     src: url('safety-webfont.woff2') format('woff2'),
         url('safety-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'safetybold';
-    src: url('safety-bold-webfont.woff2') format('woff2'),
-        url('safety-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'safetydemibold';
-    src: url('safety-demibold-webfont.woff2') format('woff2'),
-        url('safety-demibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'safetylight';
-    src: url('safety-light-webfont.woff2') format('woff2'),
-        url('safety-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
